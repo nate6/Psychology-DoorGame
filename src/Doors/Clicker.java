@@ -27,7 +27,7 @@ public class Clicker extends JButton {
         try {
             image = ImageIO.read(new File("C:\\Users\\Nate\\workspace\\DoorGame\\src\\rsc\\money button.png"));
         } catch (IOException ex) {
-            // handle exception
+            System.out.println("File not found. Check file location.");
         }
     }
     
@@ -93,5 +93,12 @@ public class Clicker extends JButton {
      */
     public static void refresh() {
         clicks = 100;
+    }
+    
+    /**
+     * Sets reward for testing.
+     */
+    public void setReward(double d) {
+        reward = d;
     }
 }

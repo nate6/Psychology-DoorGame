@@ -188,7 +188,7 @@ public class Door extends JButton {
                 greenR = 1;
             }
         }
-        else {
+        else if (cond == 3){
             redR = 6;
             if (cond2 == 1) {
                 blueR = 3;
@@ -198,6 +198,11 @@ public class Door extends JButton {
                 blueR = 1;
                 greenR = 3;
             }
+        }
+        else {
+            redR = 1;
+            blueR = 3;
+            greenR = 6;
         }
         notSet = false;
     }
